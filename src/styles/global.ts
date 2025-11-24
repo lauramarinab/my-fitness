@@ -1,0 +1,76 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+  :root {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    --white: #ffffff;
+
+    --tuna-950: #0f1224;
+    --tuna-800: #2c3045;
+    --tuna-600: #4b516a;
+    --tuna-400: #727a93;
+    --tuna-300: #8f97ad;
+    --tuna-200: #b3bbcb;
+    --tuna-100: #d9dce6;
+    --tuna-50: #f1f2f7;
+
+    --flower-950: #2b0d5f;
+    --flower-800: #5b21ae;
+    --flower-600: #8443d6;
+    --flower-400: #a678f0;
+    --flower-300: #bfa3f7;
+    --flower-200: #d7c5fb;
+    --flower-100: #ede7fd;
+    --flower-50: #f7f4ff;
+
+    --lime-950: #1b2404;
+    --lime-800: #334408;
+    --lime-600: #68840f;
+    --lime-400: #a5d01e;
+    --lime-300: #d6f12f;
+    --lime-200: #eaf76f;
+    --lime-100: #f4fac0;
+    --lime-50: #fbfde9;
+
+    --bg: var(--tuna-950);
+    --panel: rgba(255, 255, 255, 0.04);
+    --muted: var(--tuna-200);
+    --text: var(--white);
+    --accent: var(--flower-600);
+    --accent-strong: var(--lime-300);
+    --glow-lime: rgba(214, 241, 47, 0.18);
+    --glow-flower: rgba(132, 67, 214, 0.15);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 12% 18%, var(--flower-800) 0, var(--bg) 45%, var(--tuna-800) 70%),
+      linear-gradient(135deg, var(--glow-lime), var(--glow-flower));
+    color: var(--text);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+`;
