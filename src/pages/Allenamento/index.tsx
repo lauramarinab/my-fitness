@@ -7,7 +7,6 @@ export function Allenamento() {
       <PageHeading>
         <Eyebrow>Allenamento</Eyebrow>
         <h2>Piano settimanale</h2>
-        <p>Tre sedute essenziali con riscaldamento dedicato per ogni allenamento.</p>
         <p>Riscaldamento da fare prima di ogni seduta:</p>
         <p>esegui esercizi di mobilità per la parte interessata, a corpo libero (lavoro di circa 5/6 minuti)</p>
       </PageHeading>
