@@ -53,7 +53,7 @@ export const SingleWorkout: FC<SingleWorkoutProps> = ({
             {mediaType === "image" ? (
               <MediaImage src={mediaUrl} alt={`Esecuzione di ${title}`} />
             ) : (
-              <MediaVideo controls src={mediaUrl}>
+              <MediaVideo controls src={mediaUrl} loop>
                 Il tuo browser non supporta il video.
               </MediaVideo>
             )}

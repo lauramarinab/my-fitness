@@ -17,6 +17,8 @@ import {
 } from "./styles/layout";
 
 function App() {
+  const greeting = new Date().getHours() >= 16 ? "Buonasera" : "Buongiorno";
+
   return (
     <AppShell>
       <AppContainer>
@@ -24,7 +26,7 @@ function App() {
           <LogoWrap>
             <Logo />
             <BrandMeta>
-              <Eyebrow>my-fitness</Eyebrow>
+              <Eyebrow>{greeting}!</Eyebrow>
               <BrandTitle>Le tue abitudini, in equilibrio</BrandTitle>
             </BrandMeta>
           </LogoWrap>
