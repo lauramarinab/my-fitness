@@ -36,7 +36,13 @@ export function Allenamento() {
               mediaType="video"
               mediaUrl="/media/lower/single-leg-bridge.mov"
             />
-            <SingleWorkout title="Affondi sul posto" description="con manubri" series="3x10 per gamba" />
+            <SingleWorkout
+              title="Affondi sul posto"
+              description="con manubri"
+              series="3x10 per gamba"
+              mediaType="video"
+              mediaUrl="/media/lower/affondi-sul-posto.mov"
+            />
             <SingleWorkout
               title="Step up su sedia"
               description="con manubri"

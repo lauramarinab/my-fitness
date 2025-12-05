@@ -155,7 +155,7 @@ const CloseButton = styled.button`
 `;
 
 const MediaVideo = styled.video`
-  width: auto;
+  width: 100%;
   border-radius: 10px;
   background: #0f1224;
   height: calc(100vh - 200px);
