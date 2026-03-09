@@ -1,6 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Logo } from "./components/Logo";
-import { Allenamento } from "./pages/Allenamento";
+import { WorkoutPlanLayout } from "./pages/Allenamento/WorkoutPlanLayout";
+import { SchedaOne } from "./pages/Allenamento/SchedaOne";
+import { SchedaTwo } from "./pages/Allenamento/SchedaTwo";
 import { Integrazione } from "./pages/Integrazione";
 import { Nutrizione } from "./pages/Nutrizione";
 import {
@@ -40,11 +42,17 @@ function App() {
 
         <AppContent>
           <Routes>
-            <Route path="/" element={<Navigate to="/allenamento" replace />} />
-            <Route path="/allenamento" element={<Allenamento />} />
+            <Route path="/" element={<Navigate to="/allenamento/scheda-1" replace />} />
+
+            <Route path="/allenamento" element={<WorkoutPlanLayout />}>
+              <Route index element={<Navigate to="scheda-1" replace />} />
+              <Route path="scheda-1" element={<SchedaOne />} />
+              <Route path="scheda-2" element={<SchedaTwo />} />
+            </Route>
+
             <Route path="/nutrizione" element={<Nutrizione />} />
             <Route path="/integrazione" element={<Integrazione />} />
-            <Route path="*" element={<Navigate to="/allenamento" replace />} />
+            <Route path="*" element={<Navigate to="/allenamento/scheda-1" replace />} />
           </Routes>
         </AppContent>
       </AppContainer>

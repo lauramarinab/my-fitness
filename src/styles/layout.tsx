@@ -78,7 +78,10 @@ export const NavItem = styled(NavLink)`
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--text);
   font-weight: 600;
-  transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 
   &:hover {
     transform: translateY(-1px);
@@ -117,7 +120,6 @@ export const PageHeading = styled.div`
   p {
     margin: 0;
     color: var(--muted);
-    max-width: 720px;
   }
 `;
 
