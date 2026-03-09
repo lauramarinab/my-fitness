@@ -87,13 +87,13 @@ const TitleRow = styled.div`
 `;
 
 const SeriesLabel = styled.span`
-  background: var(--lime-100);
+  background: var(--lime-400);
   position: absolute;
   right: 12px;
   top: -12px;
-  padding: 3px 6px;
-  border-radius: 8px;
-  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 13px;
+  font-weight: 600;
   font-size: 12px;
 `;
 
@@ -109,7 +109,10 @@ const MediaButton = styled.button`
   justify-content: center;
   font-weight: 800;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.1s ease;
 
   &:hover {
     background: rgba(15, 18, 36, 0.12);
